@@ -105,7 +105,26 @@ Creating a private cluster must comply with [RFC 1918](https://tools.ietf.org/ht
 
 ```bash
 gcloud container clusters update [YOUR PRIVATE CLUSTER] \
+    --zone [ZONE]
     --enable-master-authorized-networks \
     --master-authorized-networks [SOURCE CIDR RANGE]
 ```
+</details>
+
+### Viewing Cluster Information and Getting Credentials
+<details>
+ <summary>Describing the cluster</summary>
+ 
+```bash
+gcloud container clusters describe [YOUR CLUSTER] --zone [ZONE]
+```
+ </details>
+<details>
+ <summary>Getting the credentials from the cluster</summary>
+ 
+```bash
+gcloud container clusters describe [YOUR CLUSTER] --zone [ZONE]
+```
+
+ Before you can interact with your cluster, you must get the credentials using this command.
 </details>
