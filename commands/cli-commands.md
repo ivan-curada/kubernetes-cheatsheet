@@ -157,3 +157,55 @@ kubectl get statefulsets
 ```
 Run `kubectl api-resources` to display list of resources types in Kubernetes
 </details>
+
+<details>
+ <summary>Get all resources across all namespaces</summary>
+ 
+```bash
+kubectl get all --all-namespaces
+```
+Run `kubectl api-resources` to display list of resources types in Kubernetes. Use `--namespace=[NAMESPACE]` to view resources in a specific namespace.
+</details>
+
+<details>
+ <summary>Describe all resources by type</summary>
+ 
+```bash
+kubectl describe pod [POD NAME]
+kubectl describe deployment [DEPLOYMENT NAME]
+kubectl describe service [SERVICE NAME]
+kubectl describe replicaset [REPLICASET NAME]
+kubectl describe statefulset [STATEFULSET NAME]
+```
+Run `kubectl api-resources` to display list of resources types in Kubernetes
+</details>
+
+<details>
+ <summary>Display logs of a pod/deployment</summary>
+ 
+```bash
+kubectl logs [POD/DEPLOYMENT NAME]
+```
+</details>
+
+### Run/Create a Kubernetes resource
+
+<details>
+ <summary>Run a basic single container</summary>
+ 
+```bash
+kubectl run [NAME] --image=[IMAGE]
+kubectl run nginx-sample --image=nginx
+```
+This creates a deployment rather than a pod. A deployment can be updated and scaled. A pod, on its own, cannot do that.
+</details>
+
+<details>
+ <summary>Create a resource based on a definition file</summary>
+ 
+```bash
+kubectl create -f [RESOURCE DEFINITION FILE | YAML | JSON]
+```
+This creates and runs a resource based on the definition file specified (it can be a pod, service, deployment, replicaset, etc)
+</details>
+
