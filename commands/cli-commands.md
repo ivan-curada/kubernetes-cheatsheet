@@ -1,6 +1,6 @@
 # CLI Commands for GKE
 
-### Creating clusters
+### Creating clusters (gcloud)
 <details>
  <summary>Creating a zonal cluster</summary>
 
@@ -117,7 +117,7 @@ gcloud container clusters update [YOUR PRIVATE CLUSTER] \
 ```
 </details>
 
-### Viewing Cluster Information and Getting Credentials
+### Viewing Cluster Information and Getting Credentials (gcloud)
 <details>
  <summary>Describing the cluster</summary>
  
@@ -134,4 +134,26 @@ gcloud container clusters get-credentials [YOUR CLUSTER] --zone [ZONE]
 ```
 
  Before you can interact with your cluster, you must get the credentials using this command.
+</details>
+
+### Interacting with your cluster (kubectl)
+<details>
+ <summary>Get all running resources in a cluster</summary>
+ 
+```bash
+kubectl get all
+```
+</details>
+
+<details>
+ <summary>Get all resources by type</summary>
+ 
+```bash
+kubectl get pods
+kubectl get deployments
+kubectl get services
+kubectl get replicasets
+kubectl get statefulsets
+```
+Run `kubectl api-resources` to display list of resources types in Kubernetes
 </details>
