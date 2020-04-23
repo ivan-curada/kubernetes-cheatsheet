@@ -3,9 +3,10 @@
 ### Creating clusters
 <details>
 <summary>Creating a zonal cluster</summary>
+
 <p>
-```
-gcloud container clusters create [CLUSTER NAME] --zone [ZONE]
-```
+    ```
+    gcloud container clusters create 
+    ```
 </p>
 </details>
