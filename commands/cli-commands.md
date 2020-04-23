@@ -2,9 +2,9 @@
 
 ### Creating clusters
 <details>
- <summary>Summary</summary>
+ <summary>Creating a zonal cluster</summary>
 
 ```bash
-gcloud --help
+gcloud container clusters create [YOUR CLUSTER] --zone [ZONE]
 ```
 </details>
