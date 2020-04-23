@@ -123,7 +123,7 @@ gcloud container clusters describe [YOUR CLUSTER] --zone [ZONE]
  <summary>Getting the credentials from the cluster</summary>
  
 ```bash
-gcloud container clusters describe [YOUR CLUSTER] --zone [ZONE]
+gcloud container clusters get-credentials [YOUR CLUSTER] --zone [ZONE]
 ```
 
  Before you can interact with your cluster, you must get the credentials using this command.
