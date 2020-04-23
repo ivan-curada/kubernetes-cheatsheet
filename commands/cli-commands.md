@@ -4,8 +4,8 @@
 <details>
 <summary>Creating a zonal cluster</summary>
 <p>
-    ```bash
-    gcloud container clusters create [YOUR CLUSTER NAME] --zone [ZONE]
-    ```
+```
+gcloud container clusters create [CLUSTER NAME] --zone [ZONE]
+```
 </p>
 </details>
