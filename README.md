@@ -35,4 +35,7 @@ A cluster is a group of nodes (connected by a network)
 ## gcloud and kubectl. Which is which?
 Yeah. If you're new with Google Kubernetes Engine, you might get confused between `gcloud` and `kubectl`. We use `gcloud` for creating, updating, or deleting a cluster. We also use it for building container image. Use `gcloud` to manage Google Cloud Resources.
 
-Now for interacting with our cluster, we use `kubectl`. Use `kubectl` for deploying/updating/deleting resources inside Kubernetes. 
+Now for interacting with our cluster, we use `kubectl`. Use `kubectl` for deploying/updating/deleting resources inside Kubernetes.
+
+## Commands
+See [commands](commands/cli-commands.md)
