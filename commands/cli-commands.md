@@ -2,11 +2,9 @@
 
 ### Creating clusters
 <details>
-<summary>Creating a zonal cluster</summary>
+ <summary>Summary</summary>
 
-<p>
-    ```
-    gcloud container clusters create [cluster] --zone [zone]
-    ```
-</p>
+```js
+const x = 1
+```
 </details>
