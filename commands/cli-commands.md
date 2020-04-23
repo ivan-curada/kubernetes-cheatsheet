@@ -104,7 +104,7 @@ Creating a private cluster must comply with [RFC 1918](https://tools.ietf.org/ht
  <summary>Enabling access to private clusters</summary>
 
 ```bash
-gcloud container clusters update private-cluster-1 \
+gcloud container clusters update [YOUR PRIVATE CLUSTER] \
     --enable-master-authorized-networks \
     --master-authorized-networks [SOURCE CIDR RANGE]
 ```
