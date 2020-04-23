@@ -8,6 +8,7 @@
 gcloud container clusters create [YOUR CLUSTER] --zone [ZONE]
 ```
 </details>
+
 <details>
  <summary>Creating a multi-zonal cluster</summary>
 
@@ -15,6 +16,7 @@ gcloud container clusters create [YOUR CLUSTER] --zone [ZONE]
 gcloud container clusters create [YOUR CLUSTER] --zone [ZONE] --node-locations [ZONE1-A],[ZONE1-B]
 ```
 </details>
+
 <details>
  <summary>Creating a regional cluster</summary>
 
@@ -23,6 +25,7 @@ gcloud container clusters create [YOUR CLUSTER] --region [REGION]
 gcloud container clusters create [YOUR CLUSTER] --region [REGION] --node-locations [ZONE1-A],[ZONE1-B]
 ```
 </details>
+
 <details>
  <summary>Creating a private cluster with no client access to the public endpoint</summary>
 
@@ -50,6 +53,7 @@ Where:
 
 Creating a private cluster must comply with [RFC 1918](https://tools.ietf.org/html/rfc1918) for best practices.
 </details>
+
 <details>
  <summary>Creating a private cluster with limited access to the public endpoint</summary>
 
@@ -75,6 +79,7 @@ Where:
 
 Creating a private cluster must comply with [RFC 1918](https://tools.ietf.org/html/rfc1918) for best practices.
 </details>
+
 <details>
  <summary>Creating a private cluster with unrestricted access to the public endpoint</summary>
 
@@ -100,6 +105,7 @@ Where:
 
 Creating a private cluster must comply with [RFC 1918](https://tools.ietf.org/html/rfc1918) for best practices.
 </details>
+
 <details>
  <summary>Enabling access to private clusters</summary>
 
@@ -119,6 +125,7 @@ gcloud container clusters update [YOUR PRIVATE CLUSTER] \
 gcloud container clusters describe [YOUR CLUSTER] --zone [ZONE]
 ```
  </details>
+
 <details>
  <summary>Getting the credentials from the cluster</summary>
  
